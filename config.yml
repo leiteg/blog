@@ -1,3 +1,83 @@
 baseURL: http://gustavoleite.me/
 languageCode: en-us
 title: Gustavo Leite
+theme: papermod
+paginate: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+
+  # Metadata
+  env: production
+  title: Gustavo Leite
+  description: My personal blog about computers and life.
+  keywords: [Blog, Computer Science, C++, Rust, Academic]
+  author: Gustavo Leite
+
+  # Theme
+  defaultTheme: light
+  disableThemeToggle: false
+
+  # Profile page
+  profileMode:
+      enabled: true
+      title: Hi, I'm Gustavo Leite 👋
+      subtitle: |
+        Computing science PhD student at Unicamp. Love computers.
+      imageUrl: img/profile.jpg
+      imageWidth: 240
+      imageHeight: 240
+      imageTitle: Hey, that's me!
+      buttons:
+          - name: About
+            url: about
+          - name: Posts
+            url: posts
+          - name: Tags
+            url: tags
+
+  # Social
+  socialIcons:
+      - name: twitter
+        url: https://twitter.com/gstvleite
+      - name: github
+        url: https://github.com/leiteg
+      - name: gitlab
+        url: https://gitlab.com/leiteg
+
+  # Post appearance
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  DisableSpecial1stPost: false
+  DisableScrollToTop: false
+  Comments: false
+  Hidemeta: false
+  HideSummary: false
+  ShowTOC: true
+  TOCOpen: false
+
+menu:
+    main:
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: publications
+          name: Publications
+          url: /publications/
+          weight: 30
