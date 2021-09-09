@@ -31,10 +31,10 @@ params:
       enabled: true
       title: Hi, I'm Gustavo Leite 👋
       subtitle: |
-        Computing science PhD student at Unicamp. Love computers.
+        Computer Science PhD student at Unicamp.
       imageUrl: img/profile.jpg
-      imageWidth: 240
-      imageHeight: 240
+      imageWidth: 360
+      imageHeight: 360
       imageTitle: Hey, that's me!
       buttons:
           - name: About
